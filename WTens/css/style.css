@@ -510,7 +510,6 @@ section {
     text-transform: uppercase;
     color: var(--secondary-color);
     margin-right: 0.5rem;
-    text-decoration: line-through;
     transition: all 0.3s;
 }
 
