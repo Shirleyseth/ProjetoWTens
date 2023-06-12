@@ -78,11 +78,6 @@ function umClique(){
 }
   console.log(aulas)
 
-  alert(aulas[0])
-  for(let i = 0; i < aulas.length; i++){
-    console.log(aulas[i])
-  }
-
   
 
   
