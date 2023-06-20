@@ -46,45 +46,50 @@ function doisCliquesDois(){
 
 
   /* Aulas */
-
-  let aulas = [
+  const aulas = [
     {
-      name: "bateria",
-      professor: "Monica",
-      horario: "Segunda as 10hs",
-    }, 
-    {
-      nome: "canto",
-      professor: "Morgana",
-      horario: "Terça as 18hs",
+        curso: "Aulas de bateria",
+        professor: "Monica",
+        horario: "Seg e Qua as 09h",
     },
     {
-      name: "guitarra",
-      professor: "Shirley",
-      horario: "Quarta as 10hs",
+        curso: "Aulas de canto",
+        professor: "Morgana",
+        horario: "Ter e Qui 16h",
     },
     {
-      name: "violino",
-      professor: "Pedro",
-      horario: "Quinta as 18hs",
+        curso: "Aulas de guitarra",
+        professor: "Leandro",
+        horario: "Sábado as 09h",
     },
-  ];
+    {
+        curso: "Aulas de violino",
+        professor: "Shirley",
+        horario: "Qua e Sex as 16h",
+    },
+];
 
-  let professor = aulas.indexOf ({
-    name: "guitarra",
-    professor: "Shirley",
-    horario: "Quarta as 10hs",
-  })
-  ;
 
-  if (professor !== -1) {
-    aulas[professor] = {
-    name: "Guitarra",
-    professor: "Leticia",
-    horario: "Sexta as 19hs"};
-
+function aula(curso, professor, horario) {
+    this.curso = curso;
+    this.professor = professor;
+    this.horario = horario;
 }
-  console.log(aulas)
+
+const novaAula = new aula("Aulas de violino", "Pedro", "Sábado as 11hs");
+aulas.push(novaAula)
+
+
+  
+function SaibaMais() {
+  aulas.forEach((user) => {
+      alert(`
+        Curso: ${user.curso}
+        Professor: ${user.professor} 
+        Horário: ${user.horario}.`)
+        })
+      }
+ 
 
   
 
