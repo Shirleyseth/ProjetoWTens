@@ -2,15 +2,23 @@
   /* Pagina Sobre */
 
 function umClique(){
-    document.getElementById("img-fluid").src="../images/sobre-img.png";
+    document.getElementById("img-fluid").src="../images/mti1.png";
+  }
+  
+function doisCliques(){
+    document.getElementById("img-fluid").src="../images/sobre-img.png"; 
+  }
+
+
+function umCliqueDois(){
+    document.getElementById("img-fluid1").src="../images/mti2.png";
+  }
+  
+function doisCliquesDois(){
     document.getElementById("img-fluid1").src="../images/piano6.png";
   }
-  
-  function doisCliques(){
-    document.getElementById("img-fluid").src="../images/mti1.png";
-    document.getElementById("img-fluid1").src="../images/mti2.png";
-  
-  }
+
+
   
 
   /* Newsletter */
