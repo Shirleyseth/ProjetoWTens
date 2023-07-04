@@ -33,15 +33,22 @@ function doisCliquesDois(){
   }
 
     /* Contato */
+
+    $(':input').on('focus', function() {
+      this.dataset.placeholder = this.placeholder;
+      this.placeholder = '';
+  }).on('blur', function(){
+      this.placeholder = this.dataset.placeholder;
+  });
     
     function Enviar() {
 
-      let name = document.getElementById("nameid");
+      let inputName = document.getElementById("nameid");
   
-      if (name.value != "") {
-          alert('Obrigado sr(a) ' + name.value + ' os seus dados foram encaminhados com sucesso');
+      if (inputName.value != "") {
+          alert('Obrigado sr(a) ' + inputName.value + ' os seus dados foram encaminhados com sucesso');
       }
-  
+  localStorage.setItem("Nome", inputName.value);
   }
 
 
