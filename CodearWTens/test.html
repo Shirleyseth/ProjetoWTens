@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>teste</title>
+   
+<body>
+ 
+  <!--javascript validaForm-->
+<form name="frmTeste" method="post" action="#" onsubmit="return validaForm(this);">
+  <p>Validação de formulário</p>
+  <p>Nome: <input type="text" name="nome" id="nome" /></p>
+  <p>Email: <input type="text" name="email" id="email" /></p>
+  <p>Sexo:
+    <label><input type="radio" name="sexo" value="M" id="masc" /> Masculino</label>
+   <label><input type="radio" name="sexo" value="F" id="masc" /> Feminino</label>
+  </p>
+  <p>Profissão
+    <select name="cargo">
+      <option value="">Selecione o cargo</option>
+      <option value="programador">Programador</option>
+      <option value="designer">Designer</option>
+      <option value="tester">Tester</option>
+      <option value="todas">Todas</option>
+   </select>
+  </p><label><input type="submit" name="sbt" value="Enviar" /></label></p>
+</form>
+
+
+
+
+
+<!--javascript frmCadastro-->
+
+<style>
+  ul{list-style:none;}
+  
+  .break{margin:10px;}
+</style>
+</head>
+<form method="post" id="frmCadastro" name="frmCadastro">
+<ul>
+  <li>Nome: <span id="rsNome">&nbsp;</span></li>
+  <li><input type="text" name="txtNome" id="txtNome" placeholder="Seu nome aqui" /></li>
+  
+  <li>e-mail: <span id="rsEmail">&nbsp;</span></li>
+  <li><input type="text" name="txtEmail" id="txtEmail" placeholder="email@dominio.com" /></li>
+  
+  <li>Senha: <span id="rsSenha">&nbsp;</span></li>
+  <li><input type="password" name="txtSenha" id="txtSenha" placeholder="********" /></li>
+    <div class="break"></div>
+  <li><input type="submit" name="btnSubmit" id="btnSubmit" value="Enviar"/></li>
+</ul>
+</form>
+ 
+
+<!--Javascript validar-->
+<h2>Validando Formulários com Javascript</h>
+<form name="form1" action="enviar.php" method="post">
+Nome:
+<input name="nome" type="text"><br /><br />
+Email:
+<input name="email" type="text"><br /><br />
+Senha:
+<input name="senha" type="password"><br /><br />
+Repitir Senha:
+<input name="rep_senha" type="password"><br /><br />
+<input type="submit"  onclick="return validar()">
+</form>
+
+<!-- cadastro completo - EXEMPLO
+<form id="cad" method="post" action="#" required>
+
+  <h3>Dados pessoais</h3>
+
+  Nome: <input type="text" name="txtnome" value="fulanÓo" maxlength="40"   required />
+
+  <br>
+
+  Sobrenome: <input type="text" name="txtsobrenome" value="fulano1" maxlength="30" required />
+
+  <br>
+  <button type="button" onclick="validar()">Validar</button>
+  <br>
+
+
+  Data de nascimento: <input type="date" name="txtdata_nasc" required />
+
+  <br>
+
+  CPF: <input type="text" id="cpf1" name="txtCPF" maxlength="11" required />
+
+  <br>
+
+
+  <h3>Dados para Contato</h3>
+
+  DDD: <input type="text" name="txtDDD" placeholder="Ex: (###)"  maxlength="2" required /><br>
+
+  Tipo: <input type="radio" name="rbT" value="Celular" checked />Celular
+
+  <input type="radio" name="rbT" value="Telefone" />Telefone
+
+  <br>  
+
+  Nº: <input type="tel" name="txtContato" maxlength="9" required  />
+
+  <br>  
+
+  E-mail: <input type="email" name="txtEmail1" maxlength="50" id="Email1" placeholder="nome@email.com" required />
+
+  <br>
+
+  Confirmação de E-mail: <input type="email" name="txtEmail2" maxlength="50" id="Email2" required />
+
+  <br>
+
+
+  <h3>Dados do Endereço</h3>
+
+  Logradouro: <input type="text" name="txtRua" maxlength="50" required />
+
+  <br>
+
+  Bairro: <input type="text" name="txtBairro" maxlength="35" required />
+
+  <br>
+
+  Cidade: <input type="text" name="txtCidade" maxlength="25" required />
+
+  <br>
+
+  Estado:
+
+  <select name="cbEstado" required>
+
+    <option>Acre</option>    
+
+    <option>Alagoas</option>
+
+    <option>Amapá</option>
+
+    <option>Amazonas</option>
+
+    <option>Bahia</option>
+
+    <option>Brasília</option>
+
+    <option>Ceará</option>
+
+    <option>Espírito Santo</option>
+
+    <option>Goiás</option>
+
+    <option>Maranhão</option>
+
+    <option>Mato Grosso</option>
+
+    <option>Mato Grosso do Sul</option>
+
+    <option>Minas Gerais</option>
+
+    <option>Pará</option>
+
+    <option>Paraíba</option>
+
+    <option>Paraná</option>
+
+    <option>Pernambuco</option>
+
+    <option>Piauí</option>
+
+    <option>Rio de Janeiro</option>
+
+    <option>Rio Grande do Norte</option>
+
+    <option>Rio Grande do Sul</option>
+
+    <option>Rondônia</option>
+
+    <option>Roraima</option>
+
+    <option>Santa Catarina</option>
+
+    <option>São Paulo</option>
+
+    <option>Sergipe</option>
+
+    <option>Tocantins</option>
+
+  </select>
+
+  <br>
+
+  Número: <input type="text" name="txtNumero" maxlength="7" required />
+
+  <br>
+
+  CEP: <input type="text" name="txtCep" placeholder="Ex: #####-###" maxlength="8" required />
+
+  <br>
+
+  Complemento: <input type="text" name="txtComplemento" maxlength="40" />
+
+  <br>
+
+
+  <h3>Dados da conta</h3>
+
+  Nome de usuário: <input type="text" name="txtLogin" required maxlength="20" />
+
+  <br>
+
+  Senha: <input type="password" name="txtsenha" required maxlength="20" />
+
+  <br>
+
+  Confirmação da senha: <input type="password" name="txtCsenha" required maxlength="20" />
+
+  <br>
+
+  Tipo de usuário: <input type="radio" name="rb" value="Usuario" checked />Cliente
+
+  <input type="radio" name="rb" value="Tecnico" />Técnico
+
+  <br>
+
+
+  <button type="button" id="btn1" onclick='javascript: validarFormulario()'>Cadastrar</button>
+
+</form>
+-->
+
+ 
+   <script src="page.js"></script>
+</body>
+</html>
