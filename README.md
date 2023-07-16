@@ -6,6 +6,6 @@ Site Loja de Instrumentos Musicais
 Projeto criado em grupo para o curso de Programação Frontend Web - Programa Codear Futura
 
 # Responsaveis pelo Projeto
-Monica Santos
+Monica Santos <br>
 Morgana Santos
 Shirley Mello
