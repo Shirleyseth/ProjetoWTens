@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aulas</title>
+
+  <!-- Bootstrap 5 CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome 5 CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Style CSS-->
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive-style.css">
+</head>
+
+<body class="aulas">
+  <!-- barra de navegação-->
+  <header id="full_nav">
+    <div class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">
+            <img src="../images/logo.png">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fas fa-stream navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="loja.html">Loja</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="aulas.html">Aulas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+            </ul>
+            <div class="header_right">
+              <div class="text-lg-end">
+                <span>LIGUE!</span>
+                <span class="phone_no">+55 11 977770001</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!--seção do banner-->
+  <section class="banner_section">
+    <div class="container">
+      <div class="banner-content">
+        <h1>Aulas</h1>
+      </div>
+    </div>
+  </section>
+
+  <!--seção da aula-->
+  <section class="aula_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center pb-5">
+          <h2 class="section_title">Nossas Aulas</h2>
+          <p class="section-subtitle">Venha conhecer as nossas aulas com professores profissionais e altamente
+            qualificados. Os 100 primeiros alunos terão descontos imperdíveis!</p>
+        </div>
+        <div class="row mx-0">
+          <div class="col-lg-3 col-sm-6 mb-5">
+            <div class="aula-box">
+              <div class="img-aula">
+                <img src="../images/bateria.png" alt="logo bateria" class="img-fluid">
+              </div>
+              <div class="align-items-center justify-content-between">
+                <h3>Aulas de Bateria</h3>
+              </div>
+              <div class="align-items-center justify-content-between">
+                <p>Venha aprender a tocar bateria, primeiros alunos terão
+                  desconto!</p>
+              </div>
+              <div class=link-aula>
+                <input type="button" class="btn main-btn" onclick="saibaMais()" value="Saiba Mais">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-5">
+            <div class="aula-box">
+              <div class="img-aula">
+                <img src="../images/canto.png" alt="logo bateria" class="img-fluid">
+              </div>
+              <div class="align-items-center justify-content-between">
+                <h3>Aulas de Canto</h3>
+              </div>
+              <div class="align-items-center justify-content-between">
+                <p>Venha aprender a cantar, primeiros alunos terão
+                  desconto!</p>
+              </div>
+              <div class=link-aula>
+                <input type="button" class="btn main-btn" onclick="saibaMais()" value="Saiba Mais">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-5">
+            <div class="aula-box">
+              <div class="img-aula">
+                <img src="../images/guitarra.png" alt="logo bateria" class="img-fluid">
+              </div>
+              <div class="align-items-center justify-content-between">
+                <h3>Aulas de Guitarra</h3>
+              </div>
+              <div class="align-items-center justify-content-between">
+                <p>Venha aprender a tocar guitarra, primeiros alunos terão
+                  desconto!</p>
+              </div>
+              <div class=link-aula>
+                <input type="button" class="btn main-btn" onclick="saibaMais()" value="Saiba Mais">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-5">
+            <div class="aula-box">
+              <div class="img-aula">
+                <img src="../images/violino.png" alt="logo bateria" class="img-fluid">
+              </div>
+              <div class="align-items-center justify-content-between">
+                <h3>Aulas de Violino</h3>
+              </div>
+              <div class="align-items-center justify-content-between">
+                <p>Venha aprender a tocar violino, primeiros alunos terão
+                  desconto!</p>
+              </div>
+              <div class=link-aula>
+                <input type="button" class="btn main-btn" onclick="saibaMais()" value="Saiba Mais">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Seção do Footer-->
+  <section class="footer_wrapper mt-3 mb-md-0">
+    <div class="container px-5 px-lg-0">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+          <h5>WTen's</h5>
+          <p class="mb-4 ps-0 company_details"> Todos Os Sons - Instrumentos Musicais</p>
+          <div class="contact-info">
+            <ul class="list-unstyled">
+              <li><a href="#"><i class="fa fa-home me-3"></i>Av. Imperatriz Leopoldina, 1415 - Vila
+                  Leopoldina - São Paulo/SP -CEP: 05305-012</a></li>
+              <li><a href="#"><i class="fa fa-phone me-3"></i>+11 2222 3333</a></li>
+              <li><a href="#"><i class="fa fa-envelope me-3"></i>wtens@wtens.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+          <h5>Atendimento ao cliente</h5>
+          <ul class="link-widget p-0">
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="../index.html">Política de privacidade</a></li>
+            <li><a href="../index.html">Termos e condições</a></li>
+            <li><a href="contato.html">Devoluções</a></li>
+            <li><a href="loja.html">Política de vendas</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+          <h5>Links rápidos</h5>
+          <ul class="link-widget p-0">
+            <li><a href="loja.html">Loja</a></li>
+            <li><a href="../index.html">Termos e condições</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="loja.html">Acessórios</a></li>
+            <li><a href="../index.html">Termos de uso</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+          <h5>Newsletter</h5>
+          <div class="form-group mb-4">
+            <form id="verificaForm">
+              <input type="email" id="email" name="email" class="form-control bg-transparent" placeholder="Digite seu e-mail aqui:">
+              <input type="submit" onclick="return validateEmail()" value="Inscreva-se" class="btn main-btn">
+            </form>
+          </div>
+          <h5>Fique Conectado</h5>
+          <ul class="social-network d-flex align-items-center p-0">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="container-fluid copyright-section">
+      <p>&copy; <a href="#">WTEN'S | CNPJ: 02.000.888/0001-10</a> - Todos os direitos Reservados 2023</p>
+    </div>
+  </section>
+
+  <!-- JQuery CDN-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Bootstrap 5 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+  <!-- Custom JS-->
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
