@@ -8,7 +8,8 @@ Projeto criado em grupo para o curso de Programação Frontend Web - Programa Co
 # Tecnologias utilizadas
 HTML <br>
 CSS <br>
-JS
+JS <br>
+Bootstrap
 
 # Desenvolvedoras do Projeto
 Monica Santos <br>
