@@ -7,5 +7,5 @@ Projeto criado em grupo para o curso de Programação Frontend Web - Programa Co
 
 # Responsaveis pelo Projeto
 Monica Santos <br>
-Morgana Santos
+Morgana Santos <br>
 Shirley Mello
