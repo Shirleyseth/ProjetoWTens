@@ -39,107 +39,6 @@ function doisCliquesDois(){
   } 
 
 
-    /* Contato */
-/*
-    let nameid = document.getElementById('nameid')
-    let validNameid = false
-
-    let emailid = document.getElementById('emailid')
-    let validEmailid = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
-
-    let address = document.getElementById('address')
-    validAddress = false
-
-    let number = document.getElementById('number')
-    validNumbers = false
-
-    let message = document.getElementById('message')
-    validMessage = false
-    
-
-  nameid.addEventListener('keyup', () => {
-    if(nameid.value.length <= 1){
-      alert('Campo Obrigatorio, *Insira seu nome')
-      nameid.setAttribute('style', 'border-color: red') 
-      validNameid = false
-
-    } else {
-      nameid.setAttribute('style', 'border-color: green') 
-      validNameid = true
-    }
-
-  })
-
-    emailid.addEventListener('keyup', () => {
-      if(emailid.value.indexOf('@') == -1 ||
-        emailid.valueOf.indexOf('.') == -1 ||
-        emailid.value == '' ||
-        emailid.value == null) {
-        alert('Por favor, *Indique um e-mail válido')  
-        emailid.focus();
-        validEmailid = false
-      } 
-
-  })
-  
-  address.addEventListener('keyup', () => {
-    if(address.value.length <= 1){
-      alert('Campo Obrigatorio, *Insira seu endereço')
-      address.setAttribute('style', 'border-color: red') 
-      validAddress = false
-
-    } else {
-      address.setAttribute('style', 'border-color: green') 
-      validAddress = true
-    }
-  
-  })
-
-  number.addEventListener('keyup', () => {
-    if(number.value.length <= 0){
-      alert("Por favor, *Digite apenas numeros")
-      number.setAttribute('style', 'border-color: red') 
-      validNumber = false
-
-    } else {
-      number.setAttribute('style', 'border-color: green') 
-      validNumber = true
-    }
-  
-  })
-
-/*  message.addEventListener('keyup', () => {
-   if(message.value == '' ||
-      message.value == null) {
-      alert('Por favor, Deixe sua mensagem!')
-      message.focus()
-      validMessage = false
-    
-}
-
-})*/
-
-/*function enviar(){
-
-    let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]');
-
-    listaUser.push({
-
-        nameid: nameid.value,
-        emailid: emailid.value,
-        address: address.value,
-        number: number.value,
-        message: message.value,
-
-    })
-    localStorage.setItem("listaUser", JSON.stringify(listaUser))
-    alert('Dados enviados com sucesso')
-
-  }
-  
-/*
-
-
 
   /* Aulas */
   const aulas = [
@@ -185,6 +84,99 @@ function saibaMais() {
         Horário: ${user.horario}.`)
         })
       }
+  
+    /* Contato */
+
+    let nameid = document.getElementById('nameid')
+    let validNameid = false
+
+    let emailid = document.getElementById('emailid')
+    let validEmailid = false
+
+    let address = document.getElementById('address')
+    validAddress = false
+
+    let number = document.getElementById('number')
+    validNumber = false
+
+    let message = document.getElementById('message')
+    validMessage = false
+    
+
+  nameid.addEventListener('blur', () => {
+    if(nameid.value.length <= 2){
+      alert('Campo Obrigatorio, *Insira seu nome com pelo menos 3 caracteres')
+      nameid.setAttribute('style', 'border-color: red') //o campo input fica vermelho quando os dados não sao validos
+      validNameid = false
+
+    } else {
+      nameid.setAttribute('style', 'border-color: green') //o campo inpt fica verde quando os dados estao corretos
+      validNameid = true
+    }
+
+  })
+
+    emailid.addEventListener('blur', () => {
+      if(emailid.value.indexOf('@') == -1 ||
+        emailid.valueOf.indexOf('.') == -1 ||
+        emailid.value == '' ||
+        emailid.value == null) {
+        alert('Por favor, *Indique um e-mail válido') 
+        emailid.setAttribute('style', 'border-color: red') 
+        validEmailid = false
+   
+    } else {
+      address.setAttribute('style', 'border-color: green') //o input de correção dos dados nao esta funcionando
+      validAddress = true
+    }
+
+  })
+  
+  
+  address.addEventListener('blur', () => {
+    if(address.value.length <= 1){
+      alert('Campo Obrigatorio, *Insira seu endereço')
+      address.setAttribute('style', 'border-color: red') 
+      validAddress = false
+
+    } else {
+      address.setAttribute('style', 'border-color: green') 
+      validAddress = true
+    }
+  
+  })
+
+  number.addEventListener('blur', () => {
+    if(number.value.length <= 0){
+      alert("Por favor, *Digite apenas numeros")
+      number.setAttribute('style', 'border-color: red') 
+      validNumber = false
+
+    } else {
+      number.setAttribute('style', 'border-color: green') 
+      validNumber = true
+    }
+  
+  })
+
+
+function enviar(e) {
+  e.preventDefault()
+    let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]');
+
+    listaUser.push({
+
+        nameCad: nameid.value,
+        emailCad: emailid.value,
+        addressCad: address.value,
+        numberCad: number.value,
+        messageCad: message.value,
+
+    })
+    localStorage.setItem("listaUser", JSON.stringify(listaUser))
+    alert('Dados enviados com sucesso')
+
+  }
   
 
   
