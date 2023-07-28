@@ -120,8 +120,7 @@ function saibaMais() {
 
     emailid.addEventListener('blur', () => {
       if(emailid.value.indexOf('@') == -1 ||
-        emailid.value == '' ||
-        emailid.value == null) {
+        emailid.value == '') {
         alert('Por favor, *Indique um e-mail válido') 
         emailid.setAttribute('style', 'border-color: red') 
         validEmailid = false
